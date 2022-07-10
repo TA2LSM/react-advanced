@@ -18,10 +18,15 @@ function Counter(props) {
   // Yukarıdaki gibi birden fazla state değişkeni multiple state variables olarak geçiyor.
   // Başlangıç değeri olarak obje de geçilebilir.
 
-  // Aşağıdaki fonksiyon bu komponent her render edildiğinde çalışır.
+  // Aşağıdaki fonksiyon bu komponent HER render edildiğinde çalışır.
   // useEffect(() => {
   //   document.title = `${name} has clicked ${count} times!`;
   // });
+
+  // Aşağıdaki fonksiyon SADECE BİR KERE ilk render'da çalışır.
+  // useEffect(() => {
+  //   document.title = `${name} has clicked ${count} times!`;
+  // }, []);
 
   // Aşağıdaki ise sadece count değiştiğinde çalışır. (Sondaki dizi: dependency array)
   // name bu dizide olmadığı içinde konsolda uyarı görülecektir. Çünkü name değişkeni

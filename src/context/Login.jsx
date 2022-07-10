@@ -6,7 +6,8 @@ function Login(props) {
 
   return (
     <div>
-      <button onClick={() => userContext.onLoggedIn("username")}>Login</button>
+      <br />
+      <button onClick={() => userContext.onLoggedIn("TA2LSM")}>Login</button>
     </div>
   );
 }
